@@ -44,3 +44,11 @@ form.onsubmit = async (ev) => {
     output.innerHTML += '<hr>' + e;
   }
 };
+
+function hideTitle(){
+  var title = document.getElementById("title").style= "display:none;";
+}
+
+function hideurl_input(){
+  var url_input = document.getElementById("url_input").style= "display:none;";
+}

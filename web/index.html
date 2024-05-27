@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sentimental Analysis</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,11 +15,9 @@
       <div class="title">
          Sentiment Checker
       </div>
-      <form action="/u">
-         <div class="field">
-            <a href="#"><button value="URL">URL</button></a>
-         </div>
-      </form>
+      <div class="field">
+         <button value="URL" onclick="hideTitle()">URL</button>
+      </div>
       <form action="t">
          <div class="field">
             <a href="#"><button value="Text">Text</button></a>
@@ -32,7 +30,7 @@
    </div>
 
 <div class="wrapper">
-      <div class="title">
+      <div id="title">
          Sentiment Checker
       </div>
       <form action="#">
@@ -45,10 +43,9 @@
       </form>
    </div> 
   </main>
-
   <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
   <script src="https://unpkg.com/base64-js@1.3.0/base64js.min.js"></script>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
