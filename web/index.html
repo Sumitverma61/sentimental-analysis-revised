@@ -10,40 +10,42 @@
 
 <body>
   <main>
-    <h1>Sentimental Analysis</h1>
+    <h2>Sentimental Analysis</h2>
     <div class="wrapper">
-      <div class="title">
-         Sentiment Checker
-      </div>
-      <form action="/u">
-         <div class="field">
-            <a href="#"><button value="URL">URL</button></a>
-         </div>
-      </form>
-      <form action="t">
-         <div class="field">
-            <a href="#"><button value="Text">Text</button></a>
-         </div>
-      </form>
-      <form action="/ui"><div class="field">
-            <a href="#"><button value="Upload image">Upload image</button></a>
-      </div>
-      </form>
-   </div>
+      <button value="URL">URL</button>
 
-<div class="wrapper">
-      <div class="title">
-         Sentiment Checker
+      <button value="Text">Text</button>
+      <button value="Upload image">Upload image</button>
+
+    </div>
+    <br>
+
+    <div class="wrap">
+      <div id="check">
+        Sentiment Checker
       </div>
-      <form action="#">
-         <br>
-         <div class="field">
-            <input type="text" placeholder="Enter your URL" id = "url_input">
-            <textarea id = "text_input" placeholder="Enter your text here..."></textarea>
-            <input type="file" id = "file_input">
-         </div>
-      </form>
-   </div> 
+
+
+      <div class="field">
+        <input type="text" placeholder="Enter your URL" id="url_input">
+        <textarea id="text_input" placeholder="Enter your text here..."></textarea>
+        <input type="file" id="file_input">
+      </div>
+
+    </div>
+    <br>
+    <div class="container">
+      <div class="result">
+        Result
+      </div>
+      <div>
+
+        <div>
+          <h4 class="text">Overall Score<span id="sentiment">Positive</span></h4>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
