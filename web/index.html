@@ -10,8 +10,9 @@
 
 <body>
   <main>
-    <h1>Sentimental Analysis</h1>
+    <h2>Sentimental Analysis</h2>
     <div class="wrapper">
+<<<<<<< HEAD
       <div class="title">
          Sentiment Checker
       </div>
@@ -32,16 +33,42 @@
 <div class="wrapper">
       <div id="title">
          Sentiment Checker
+=======
+      <button value="URL">URL</button>
+
+      <button value="Text">Text</button>
+      <button value="Upload image">Upload image</button>
+
+    </div>
+    <br>
+
+    <div class="wrap">
+      <div id="check">
+        Sentiment Checker
+>>>>>>> 4ba751ae6b3e2922bcb5204f60003208d27db325
       </div>
-      <form action="#">
-         <br>
-         <div class="field">
-            <input type="text" placeholder="Enter your URL" id = "url_input">
-            <textarea id = "text_input" placeholder="Enter your text here..."></textarea>
-            <input type="file" id = "file_input">
-         </div>
-      </form>
-   </div> 
+
+
+      <div class="field">
+        <input type="text" placeholder="Enter your URL" id="url_input">
+        <textarea id="text_input" placeholder="Enter your text here..."></textarea>
+        <input type="file" id="file_input">
+      </div>
+
+    </div>
+    <br>
+    <div class="container">
+      <div class="result">
+        Result
+      </div>
+      <div>
+
+        <div>
+          <h4 class="text">Overall Score<span id="sentiment">Positive</span></h4>
+        </div>
+      </div>
+    </div>
+
   </main>
   <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
   <script src="https://unpkg.com/base64-js@1.3.0/base64js.min.js"></script>
