@@ -6,64 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sentimental Analysis</title>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <style>
+    #url_input{
+      display: none;
+    }
+    
+    #text_input{
+      display: none;
+    }
+
+    #file_input{
+      display: none;
+    }
+    #Score{
+      display: none;
+    }
+    #container{
+      display: none;
+    }
+    #SentimentCheck{
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <main>
     <h2>Sentimental Analysis</h2>
     <div class="wrapper">
-<<<<<<< HEAD
-      <div class="title">
-         Sentiment Checker
-      </div>
-      <div class="field">
-         <button value="URL" onclick="hideTitle()">URL</button>
-      </div>
-      <form action="t">
-         <div class="field">
-            <a href="#"><button value="Text">Text</button></a>
-         </div>
-      </form>
-      <form action="/ui"><div class="field">
-            <a href="#"><button value="Upload image">Upload image</button></a>
-      </div>
-      </form>
-   </div>
+      <button value="URL" onclick="showurl_input()">URL</button>
 
-<div class="wrapper">
-      <div id="title">
-         Sentiment Checker
-=======
-      <button value="URL">URL</button>
-
-      <button value="Text">Text</button>
-      <button value="Upload image">Upload image</button>
+      <button value="Text" onclick="showtext_input()">Text</button>
+      <button value="Image" onclick="showimage_input()">Image</button>
 
     </div>
     <br>
 
     <div class="wrap">
-      <div id="check">
-        Sentiment Checker
->>>>>>> 4ba751ae6b3e2922bcb5204f60003208d27db325
-      </div>
+
 
 
       <div class="field">
         <input type="text" placeholder="Enter your URL" id="url_input">
         <textarea id="text_input" placeholder="Enter your text here..."></textarea>
         <input type="file" id="file_input">
+        <button value="SentimentCheck" id="SentimentCheck" onclick="showContainer()">Submit</button>
       </div>
 
     </div>
     <br>
-    <div class="container">
+    <div id="container">
       <div class="result">
         Result
       </div>
       <div>
 
-        <div>
+        <div id="Score">
           <h4 class="text">Overall Score<span id="sentiment">Positive</span></h4>
         </div>
       </div>
