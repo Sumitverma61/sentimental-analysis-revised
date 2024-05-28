@@ -35,16 +35,49 @@
   <main>
     <h2>Sentimental Analysis</h2>
     <div class="wrapper">
+<<<<<<< HEAD
       <button value="URL" onclick="showurl_input()">URL</button>
 
       <button value="Text" onclick="showtext_input()">Text</button>
       <button value="Image" onclick="showimage_input()">Image</button>
+=======
+      <div class="title">
+         Sentiment Checker
+      </div>
+      <div class="field">
+         <button value="URL" onclick="hideTitle()">URL</button>
+      </div>
+      <form action="t">
+         <div class="field">
+            <a href="#"><button value="Text">Text</button></a>
+         </div>
+      </form>
+      <form action="/ui"><div class="field">
+            <a href="#"><button value="Upload image">Upload image</button></a>
+      </div>
+      </form>
+   </div>
+
+<div class="wrapper">
+      <div id="title">
+         Sentiment Checker
+      <button value="URL">URL</button>
+
+      <button value="Text">Text</button>
+      <button value="Upload image">Upload image</button>
+>>>>>>> 9d4e6316368df34d1e3e4fd8eba9bf3d4547c99e
 
     </div>
     <br>
 
     <div class="wrap">
+<<<<<<< HEAD
 
+=======
+      <div id="check">
+        Sentiment Checker
+      </div>
+>>>>>>> 9d4e6316368df34d1e3e4fd8eba9bf3d4547c99e
 
 
       <div class="field">
@@ -67,7 +100,16 @@
         </div>
       </div>
     </div>
-
+    <label>Positive Line
+      <button class="collapsible">&darr;</button>
+    </label> 
+    </select>
+    <label>Negative Line
+      <button class="collapsible">&darr;</button>
+      </label> 
+      </select>
+      <br>
+     
   </main>
   <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
   <script src="https://unpkg.com/base64-js@1.3.0/base64js.min.js"></script>
